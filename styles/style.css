@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+
+:root {
+    --cor-primaria: #FFF3C7; 
+    --cor-secundaria: #FC819E;  
+    --cor-terciaria: #FEC7B4;
+    --cor-quaternaria: #F7418F;
+    --cor-quinaria: #FFE0C7;
+    --cor-border: #EF90A6;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ao fazer o uso do * é possivel modificar toda a página de uma vez só (usar somente o margin e padding)*/
+
+body{
+    /* height: 100vh;          comentando o height para pegar a pagina toda agora          */
+    box-sizing: border-box;
+    background-color:var(--cor-primaria);
+    color:var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    /* font-family: var(--fonte-secundaria); */
+    font-size: 1.5rem;
+    /* font-weight: 600; */
+    color:var(--cor-border);
+    /* text-decoration: none; */
+    
+}
+
+
+/* h1{
+    font-weight: bold;
+} */
+
+
+
+.apresentacao{
+    padding:  5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* o flex coloca por padrão todo mundo na mesma linha, mas ai cabe a gente organizar isso */
+/* align items center, alinha os item */
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria)
+}
+
+.titulo-destaque{
+    color:var(--cor-quaternaria); 
+    /* border: 1px outset var(--cor-terciaria);   */
+    padding: 1px;
+    /* aqui foi adicionado a borda através do border e o padding fazendo o preenchimento dentro da borda criada */
+    /* a tag span foi mascarada, devido ao uso da class, assim posso renomear e especificar apenas aquela parte do codigo. */
+    /* trocando assim aqui depois para .titulo-destque, alias de usar span (mas sempre lembrando de por o ponto final na frente)*/
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria)
+
+}
+
+.apresentacao__conteudo__texto__curriculo{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    text-decoration: none; color:var(--cor-terciaria);
+
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentaçao__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+
+
+}
+
+
+.apresentacao__links__navegacao {
+    /* background-color:#00990E; */
+    display: flex; 
+    justify-content: center ;
+    gap: 16px;
+    border: 2px solid var(--cor-quaternaria);   
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none; 
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria)
+    
+}
+
+/* o padding cria a margem invisivel, nele o primeiro numero sempre sera da margem vertical e o segundo da horizontal */
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-border);
+    padding: 3%;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.rodape {
+    color:var(--cor-secundaria);
+    background-color: var(--cor-quinaria);
+    padding: 24px 0;
+    border: 2px inset var(--cor-border); 
+    /* width: 378px;        */
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
